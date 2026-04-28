@@ -25,6 +25,7 @@ const ja_JP = {
     alert_rules: 'アラートルール',
     alert_mutes: 'ミュートルール',
     alert_subscribes: 'サブスクリプションルール',
+    custom_aggregate_rules: '集約ルール',
     job: 'アラート自動修復',
     job_tpls: '自動修復スクリプト',
     job_tasks: '履歴タスク',

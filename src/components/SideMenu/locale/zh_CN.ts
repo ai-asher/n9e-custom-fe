@@ -25,6 +25,7 @@ const zh_CN = {
     alert_rules: '告警规则',
     alert_mutes: '屏蔽规则',
     alert_subscribes: '订阅规则',
+    custom_aggregate_rules: '聚合规则',
     job: '告警自愈',
     job_tpls: '自愈脚本',
     job_tasks: '历史任务',

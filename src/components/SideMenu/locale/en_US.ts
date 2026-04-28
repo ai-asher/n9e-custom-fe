@@ -25,6 +25,7 @@ const en_US = {
     alert_rules: 'Alert rules',
     alert_mutes: 'Muting rules',
     alert_subscribes: 'Subscription rules',
+    custom_aggregate_rules: 'Aggregate rules',
     job: 'Self-healing',
     job_tpls: 'Self-Healing script',
     job_tasks: 'Task history',

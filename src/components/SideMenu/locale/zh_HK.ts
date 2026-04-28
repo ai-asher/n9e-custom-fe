@@ -25,6 +25,7 @@ const zh_HK = {
     alert_rules: '告警規則',
     alert_mutes: '屏蔽規則',
     alert_subscribes: '訂閱規則',
+    custom_aggregate_rules: '聚合規則',
     job: '告警自癒',
     job_tpls: '自癒腳本',
     job_tasks: '歷史任務',

@@ -25,6 +25,7 @@ const ru_RU = {
     alert_rules: 'Правила оповещения',
     alert_mutes: 'Режим тишины',
     alert_subscribes: 'Подписки',
+    custom_aggregate_rules: 'Правила агрегации',
     job: 'Самовосстановление',
     job_tpls: 'Скрипт самовосстановления',
     job_tasks: 'Задача самовосстановления',
