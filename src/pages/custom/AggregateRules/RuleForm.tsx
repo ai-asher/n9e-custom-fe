@@ -110,7 +110,7 @@ const RuleForm: React.FC<Props> = ({ mode, initial, onClose, onSaved }) => {
   };
 
   return (
-    <Modal title={isEdit ? `编辑聚合规则 #${initial?.id}` : '新建聚合规则'} open onCancel={onClose} onOk={submit} okText='保存' cancelText='取消' width={680} destroyOnClose>
+    <Modal title={isEdit ? `编辑聚合规则 #${initial?.id}` : '新建聚合规则'} visible onCancel={onClose} onOk={submit} okText='保存' cancelText='取消' width={680} destroyOnClose>
       <Form form={form} layout='vertical' preserve={false}>
         <Form.Item label='名称' name='name' rules={[{ required: true, message: '必填' }]} tooltip='给规则起个能让 oncall 一眼看懂的名字'>
           <Input placeholder='例如：service+cluster 5 分钟合并' maxLength={255} />
