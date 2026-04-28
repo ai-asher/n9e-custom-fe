@@ -97,6 +97,10 @@ export const getMenuList = (t) => {
           key: '/alert-his-events',
           label: t('历史告警'),
         },
+        {
+          key: '/custom/aggregate-rules',
+          label: t('聚合规则'),
+        },
       ],
     },
     {

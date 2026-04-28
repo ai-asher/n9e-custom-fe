@@ -33,6 +33,7 @@ import LoginCallbackCustom from '@/pages/loginCallback/Custom';
 import LoginCallbackDingTalk from '@/pages/loginCallback/DingTalk';
 import LoginCallbackFeishu from '@/pages/loginCallback/Feishu';
 import AlertRules, { Add as AlertRuleAdd, Edit as AlertRuleEdit } from '@/pages/alertRules';
+import CustomAggregateRules from '@/pages/custom/AggregateRules';
 import Profile from '@/pages/account/profile';
 import { List as Dashboard, Detail as DashboardDetail, Share as DashboardShare } from '@/pages/dashboard';
 import { getDefaultThemeMode } from '@/pages/dashboard/Detail/utils';
@@ -167,6 +168,7 @@ export default function Content() {
         <Route exact path='/alert-rules/edit/:id' component={AlertRuleEdit} />
         <Route exact path='/alert-rules' component={AlertRules} />
         <Route exact path='/alert-rules/brain/:id' component={StrategyBrain} />
+        <Route exact path='/custom/aggregate-rules' component={CustomAggregateRules} />
         <Route exact path='/alert-mutes' component={Shield} />
         <Route exact path='/alert-mutes/add/:from?' component={AddShield} />
         <Route exact path='/alert-mutes/edit/:id' component={ShieldEdit} />
