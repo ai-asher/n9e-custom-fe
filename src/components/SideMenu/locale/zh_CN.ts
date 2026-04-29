@@ -29,6 +29,7 @@ const zh_CN = {
     custom_inhibit_rules: '抑制规则',
     custom_emergency_mute: '应急屏蔽',
     custom_incidents: 'Incident 列表',
+    custom_suppressed_events: '被抑制告警',
     custom_audit_logs: '审计日志',
     job: '告警自愈',
     job_tpls: '自愈脚本',

@@ -29,6 +29,7 @@ const zh_HK = {
     custom_inhibit_rules: '抑制規則',
     custom_emergency_mute: '應急屏蔽',
     custom_incidents: 'Incident 列表',
+    custom_suppressed_events: '被抑制告警',
     custom_audit_logs: '審計日誌',
     job: '告警自癒',
     job_tpls: '自癒腳本',

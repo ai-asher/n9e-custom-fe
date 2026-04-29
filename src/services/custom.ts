@@ -243,3 +243,47 @@ export const listAuditLogs = (
     offset?: number;
   } = {},
 ) => request(`${PREFIX}/audit-logs`, { method: RequestMethod.Get, params });
+
+// ─── Suppressed events ───────────────────────────────────────────
+
+export interface SuppressedEvent {
+  id: number;
+  rule_id: number;
+  rule_name: string;
+  source_event_hash: string;
+  target_event_hash: string;
+  source_rule_name: string;
+  target_rule_name: string;
+  source_tags: string;
+  target_tags: string;
+  source_severity: number;
+  target_severity: number;
+  group_id: number;
+  datasource_id: number;
+  suppressed_at: number;
+}
+
+export const listSuppressedEvents = (
+  params: {
+    rule_id?: number;
+    source_hash?: string;
+    target_hash?: string;
+    since?: number;
+    limit?: number;
+    offset?: number;
+  } = {},
+) => request(`${PREFIX}/suppressed-events`, { method: RequestMethod.Get, params });
+
+// ─── Inhibit try-run ─────────────────────────────────────────────
+
+export interface InhibitTryRunReq {
+  hash: string;
+  rule_name?: string;
+  severity?: number;
+  tags?: string;
+  tags_map?: Record<string, string>;
+  group_id?: number;
+  datasource_id?: number;
+}
+
+export const inhibitTryRun = (data: InhibitTryRunReq) => request(`${PREFIX}/inhibit-tryrun`, { method: RequestMethod.Post, data });

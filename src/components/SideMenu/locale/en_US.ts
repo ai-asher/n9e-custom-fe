@@ -29,6 +29,7 @@ const en_US = {
     custom_inhibit_rules: 'Inhibit rules',
     custom_emergency_mute: 'Emergency mute',
     custom_incidents: 'Incidents',
+    custom_suppressed_events: 'Suppressed events',
     custom_audit_logs: 'Audit log',
     job: 'Self-healing',
     job_tpls: 'Self-Healing script',

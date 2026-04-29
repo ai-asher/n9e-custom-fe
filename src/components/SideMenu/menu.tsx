@@ -84,6 +84,7 @@ export const getMenuList = (embeddedProductMenu: MenuItem[] = [], hideDeprecated
             { key: '/alert-cur-events', label: 'menu.cur_events' },
             { key: '/alert-his-events', role: ['Admin'], label: 'menu.his_events' },
             { key: '/custom/incidents', label: 'menu.custom_incidents' },
+            { key: '/custom/suppressed-events', label: 'menu.custom_suppressed_events' },
             { key: '/custom/audit-logs', role: ['Admin'], label: 'menu.custom_audit_logs' },
           ],
         },

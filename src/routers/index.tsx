@@ -38,6 +38,7 @@ import CustomInhibitRules from '@/pages/custom/InhibitRules';
 import CustomEmergencyMute from '@/pages/custom/EmergencyMute';
 import CustomIncidents from '@/pages/custom/Incidents';
 import CustomAuditLogs from '@/pages/custom/AuditLogs';
+import CustomSuppressedEvents from '@/pages/custom/SuppressedEvents';
 import Profile from '@/pages/account/profile';
 import { List as Dashboard, Detail as DashboardDetail, Share as DashboardShare } from '@/pages/dashboard';
 import { getDefaultThemeMode } from '@/pages/dashboard/Detail/utils';
@@ -177,6 +178,7 @@ export default function Content() {
         <Route exact path='/custom/emergency-mute' component={CustomEmergencyMute} />
         <Route exact path='/custom/incidents' component={CustomIncidents} />
         <Route exact path='/custom/audit-logs' component={CustomAuditLogs} />
+        <Route exact path='/custom/suppressed-events' component={CustomSuppressedEvents} />
         <Route exact path='/alert-mutes' component={Shield} />
         <Route exact path='/alert-mutes/add/:from?' component={AddShield} />
         <Route exact path='/alert-mutes/edit/:id' component={ShieldEdit} />

@@ -29,6 +29,7 @@ const ja_JP = {
     custom_inhibit_rules: '抑制ルール',
     custom_emergency_mute: '緊急ミュート',
     custom_incidents: 'インシデント一覧',
+    custom_suppressed_events: '抑制されたアラート',
     custom_audit_logs: '監査ログ',
     job: 'アラート自動修復',
     job_tpls: '自動修復スクリプト',

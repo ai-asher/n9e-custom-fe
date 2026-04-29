@@ -29,6 +29,7 @@ const ru_RU = {
     custom_inhibit_rules: 'Правила подавления',
     custom_emergency_mute: 'Аварийное отключение',
     custom_incidents: 'Инциденты',
+    custom_suppressed_events: 'Подавленные события',
     custom_audit_logs: 'Журнал аудита',
     job: 'Самовосстановление',
     job_tpls: 'Скрипт самовосстановления',
