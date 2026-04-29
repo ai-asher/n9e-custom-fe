@@ -63,6 +63,8 @@ export const getMenuList = (embeddedProductMenu: MenuItem[] = [], hideDeprecated
             { key: '/alert-mutes', label: 'menu.alert_mutes' },
             { key: '/alert-subscribes', label: 'menu.alert_subscribes' },
             { key: '/custom/aggregate-rules', label: 'menu.custom_aggregate_rules' },
+            { key: '/custom/inhibit-rules', label: 'menu.custom_inhibit_rules' },
+            { key: '/custom/emergency-mute', label: 'menu.custom_emergency_mute' },
           ],
         },
         {
@@ -81,6 +83,8 @@ export const getMenuList = (embeddedProductMenu: MenuItem[] = [], hideDeprecated
           children: [
             { key: '/alert-cur-events', label: 'menu.cur_events' },
             { key: '/alert-his-events', role: ['Admin'], label: 'menu.his_events' },
+            { key: '/custom/incidents', label: 'menu.custom_incidents' },
+            { key: '/custom/audit-logs', role: ['Admin'], label: 'menu.custom_audit_logs' },
           ],
         },
         {
