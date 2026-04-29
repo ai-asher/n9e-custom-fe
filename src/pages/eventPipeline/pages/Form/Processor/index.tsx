@@ -18,6 +18,7 @@ import Relabel from './Relabel';
 import Callback from './Callback';
 import EventDrop from './EventDrop';
 import AISummary from './AISummary';
+import AlertAggregate from './AlertAggregate';
 
 interface Props {
   disabled?: boolean;
@@ -131,6 +132,10 @@ export default function NotifyConfig(props: Props) {
                 label: 'AI Summary',
                 value: 'ai_summary',
               },
+              {
+                label: 'Alert Aggregate',
+                value: 'alert_aggregate',
+              },
             ],
             IS_PLUS ? PlusOptions : [],
           )}
@@ -151,6 +156,7 @@ export default function NotifyConfig(props: Props) {
       {processorType === 'event_update' && <Callback field={field} namePath={[field.name, 'config']} />}
       {processorType === 'event_drop' && <EventDrop field={field} namePath={[field.name, 'config']} />}
       {processorType === 'ai_summary' && <AISummary field={field} namePath={[field.name, 'config']} />}
+      {processorType === 'alert_aggregate' && <AlertAggregate field={field} namePath={[field.name, 'config']} />}
       <PlusProcessor processorType={processorType} field={field} />
 
       <TestModal type='processor' config={processorConfig} />
